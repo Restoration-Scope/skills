@@ -5,7 +5,7 @@ description: Check whether a tree-planting, reforestation, agroforestry or other
 
 # Restoration Data Diagnostic
 
-Help a restoration team see what its existing data can already answer, where the record breaks, and what to improve first. Any data the team has is useful: it shows both what is known and what to do next. This is a starting point, not a pass-or-fail test.
+Help a restoration team see what its existing data can already answer, where the record breaks, and what to improve first. This is a starting point, not a pass-or-fail test.
 
 ## The five questions
 
@@ -19,21 +19,21 @@ They test whether a headline planting claim can be traced back to the operationa
 
 ## Rules that always apply
 
-- **Read only.** Never modify, move, rename, merge, delete or reformat the source data. Write only into the report folder, outside the source folders: `report.md`, `gaps.csv`, and any check scripts you want to keep (scripts only, never copied data).
+- **Read only.** Never modify, move, rename, merge, delete or reformat the source data. Write only into the report folder, outside the source folders: `report.md`, `gaps.csv` and any check scripts, never copied data. Scratch work stays in memory, or in a temporary location the user agrees to and you delete afterwards.
 - **Stay in scope.** Inspect only the files and folders the user places in scope. Do not upload, share or send the data anywhere.
 - **Never invent.** Do not infer missing footprints, species splits, dates, relationships, counts or outcomes. A gap is a finding, not something to fill in.
 - **Suspected matches stay suspected.** When two values probably mean the same thing (`S001` and `S-001`, "Grevilea" and "Grevillea"), show the answer both ways or count the match with a visible flag, list it under questions for the team, and never merge it silently.
 - **Source every finding.** Each conclusion names the file (and sheet, layer, column or row range) it came from. Keep facts, derived results, suspected issues and recommendations visibly separate.
 - **Keep counts apart.** Planned, dispatched, delivered, planted, replaced, surviving and thriving are different numbers. Never add them together or swap one for another.
-- **Only exact-looking numbers you can back.** If the expected total (the denominator) is unknown or uncertain, report what was observed and say why no percentage is given.
+- **No unbacked percentages.** Without a reliable expected total, report what was observed and say why no percentage ([assessment-model.md](references/assessment-model.md#testing-exhaustiveness)).
 - **No blame.** Restoration work is hard and data gaps are normal. Frame every gap as an improvement path.
 - **No overclaiming.** A planting total is not ecological impact. Better data does not guarantee survival, certification, investment or funding.
-- **No platform pitch.** Prefer small changes to existing workflows. Do not recommend new software just because the data lives in spreadsheets.
+- **No platform pitch.** Do not recommend new software just because the data lives in spreadsheets.
 - **Names stay private.** In the report, refer to farmers, landowners, communities and partners by their IDs, not their names, unless the user asks otherwise. Never compare named partners.
 
 ## Workflow
 
-Work through the steps in order. Tell the user briefly what you are doing at each step; ask only where a step says to.
+Work through the steps in order; ask only where a step says to.
 
 ### 1. Agree the scope
 
@@ -49,7 +49,7 @@ Record the agreed scope, exclusions, known limitations and the provider notice a
 
 ### 2. Inventory before interpreting
 
-List every source before judging any of it. For each: path, format, what it appears to contain, size (rows, features, sheets, layers), where its data comes from (a field app, a nursery log, typed from paper, derived from another file), date range covered, the latest date inside the data, the file's modified date (kept separate: a re-saved file is not fresh data), how often it is updated if known, who maintains it if known, and whether it looks authoritative, derived, duplicated or uncertain. Do not assume the first or largest spreadsheet is the canonical one. Look inside workbooks for every sheet and inside GIS files for every layer. See [checks.md](references/checks.md) for how to read each format.
+List every source before judging any of it, filling the source map columns in [report-template.md](references/report-template.md). Keep the file's modified date apart from the latest date inside the data: a re-saved file is not fresh data. Do not assume the first or largest spreadsheet is canonical. Open every sheet and every layer; [checks.md](references/checks.md) says how to read each format.
 
 ### 3. Find the real-world spine
 
@@ -83,7 +83,7 @@ For each domain (areas, people, interventions, monitoring, evidence), give a tra
 
 ### 6. Build the gap register
 
-One row per gap, filed under the one kind that fits it best: missing source sets, missing members or expected records, records missing required fields, unstable or inconsistent identifiers, disconnected records, ambiguous definitions, suspected errors, stale information. Each row: what, where (source reference), how many (if countable), why it matters, confidence that the gap is real (high, medium, low, with the reason when not high), and whether it needs a field or human check.
+One row per gap, with the `gaps.csv` columns in [report-template.md](references/report-template.md), filed under the one kind that fits it best: missing source sets, missing members or expected records, records missing required fields, unstable or inconsistent identifiers, disconnected records, ambiguous definitions, suspected errors, stale information.
 
 ### 7. Prioritize improvements
 
@@ -91,7 +91,7 @@ Recommend a short, ordered roadmap, proportional to the team's size. Weigh risk 
 
 ### 8. Write the report
 
-Write `report.md` from [report-template.md](references/report-template.md) and `gaps.csv` (the gap register as a table) in the agreed folder. Then, in chat, give a short summary: the five-question table, the three most important gaps (by the weighing in step 7), and the first recommended step. End with the questions that need the team's own judgment.
+Write `report.md` and `gaps.csv` from [report-template.md](references/report-template.md) in the agreed folder. Then, in chat, give a short summary: the five-question table, the three most important gaps (by the weighing in step 7), and the first recommended step. End with the questions that need the team's own judgment.
 
 ## When the data is very large or messy
 

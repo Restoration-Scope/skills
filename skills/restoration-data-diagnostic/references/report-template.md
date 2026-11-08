@@ -37,4 +37,4 @@ Numbered, smallest useful change first where it unlocks later ones. For each: th
 What only the team can decide or confirm: expected totals, monitoring frequency, which source is authoritative, field checks.
 ```
 
-`gaps.csv` columns: `id, kind, description, source, count, why_it_matters, confidence, needs_field_check`.
+`gaps.csv` columns: `id, kind, description, source, count, why_it_matters, confidence, needs_field_check`. `source` is the file and sheet, layer, column or rows; `count` only when countable; `confidence` is that the gap is real (high, medium, low, with the reason when not high); `needs_field_check` is yes or no.

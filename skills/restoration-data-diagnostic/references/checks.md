@@ -1,6 +1,6 @@
 # Checks
 
-Run the checks that fit the formats in scope. In the report, list which ran, which could not (and why), and which need field or human verification. Use whatever tools are available locally (a scripting language, a GIS library, a spreadsheet reader). Never write back to a source file, and never copy source data into the report folder: work in memory, or in a temporary location the user agrees to and that you delete afterwards.
+Run the checks that fit the formats in scope. In the report, list which ran, which could not (and why), and which need field or human verification. Use whatever tools are available locally (a scripting language, a GIS library, a spreadsheet reader). The read-only rule in SKILL.md applies to every check.
 
 ## Reading safely
 

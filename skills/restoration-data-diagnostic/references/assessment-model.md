@@ -25,8 +25,6 @@ Rate each with the evidence, using:
 - **Unknown:** the evidence cannot support a rating (no denominator, sample only, nothing to compare against).
 - **Not applicable:** the dimension does not apply to this domain or scope.
 
-Prefer unknown to a guess.
-
 - **Exhaustive:** every in-scope unit and every expected activity is represented.
 - **Complete:** each represented record holds the information and evidence it should.
 - **Correct:** the information is attached to the right real-world thing and describes it accurately.
