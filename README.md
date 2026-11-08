@@ -36,7 +36,7 @@ The skill runs in whichever agent you install it in and reads only the files you
 
 ## About
 
-Built and maintained by [Restoration Scope](https://restorationscope.com/?utm_source=github&utm_medium=referral&utm_campaign=data-diagnostic-skill), which builds digital infrastructure for nature projects: field data, maps and reporting for project teams. Questions or ideas: open an issue.
+Built and maintained by [Restoration Scope](https://restorationscope.com/?utm_source=github&utm_medium=referral&utm_campaign=data-diagnostic-skill), which builds digital infrastructure for nature projects: field data, maps and reporting for project teams. See how Restoration Scope works with [reforestation teams](https://restorationscope.com/solutions/reforestation?utm_source=github&utm_medium=referral&utm_campaign=data-diagnostic-skill). Questions or ideas: open an issue.
 
 ## License
 
