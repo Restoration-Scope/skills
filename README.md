@@ -2,6 +2,19 @@
 
 Agent skills for nature restoration teams. They work with Claude Code, Codex, Cursor and other agents that read `SKILL.md` files.
 
+## Planting records check
+
+Can your planting records say who planted what, exactly where, and when? And can you trust them?
+
+Attach a planting log, distribution list or map export and ask your agent to check it. It may ask a few questions first, then writes a short report:
+
+- where each question stands, from a rough answer to a solid one;
+- four tests on the records: exhaustive, complete, correct, current;
+- example rows from your own file for each gap;
+- what to fix first, and what only your team can answer.
+
+See an [example report](skills/planting-records-check/references/example-report.html). Ask something like: *"Check my planting records in ./planting-log.xlsx."*
+
 ## Restoration Data Diagnostic
 
 Can your team answer these five questions from its own data, without digging through spreadsheets?
@@ -22,17 +35,17 @@ Point your agent at the folders where your project data lives: spreadsheets, fie
 
 It is a starting point, not a pass-or-fail test. It is told never to change your files or fill a gap with a guess, and to prefer small fixes to your current workflow over new software.
 
-### Install
+## Install
 
 ```bash
 npx skills add restoration-scope/skills
 ```
 
-Then ask your agent something like: *"Run the restoration data diagnostic on the 2025 planting season in ./data."*
+This installs both skills. For the diagnostic, ask something like: *"Run the restoration data diagnostic on the 2025 planting season in ./data."* It goes deeper than the planting records check: it reads whole folders of planting, monitoring and land files.
 
-### Your data
+## Your data
 
-The skill runs in whichever agent you install it in and reads only the files you point it at. It does not send anything to Restoration Scope. Your AI model provider processes what the agent reads, under your own agreement with them.
+Each skill runs in whichever agent you install it in and reads only the files you point it at. It does not send anything to Restoration Scope. Your AI model provider processes what the agent reads, under your own agreement with them.
 
 ## About
 
