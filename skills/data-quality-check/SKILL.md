@@ -1,6 +1,6 @@
 ---
 name: data-quality-check
-description: Check whether a project's data can be trusted, for any kind of project (tree planting, cookstoves, water points, trainings): how its places, people, activities and follow-ups connect, four tests (exhaustive, complete, correct, current) and its maps. Writes an HTML report with example rows from their own files, a gap list and what to fix first. Use when someone shares project records (activity logs, beneficiary lists, field-app exports, maps, follow-up surveys) and asks to check, audit or review their data quality. For tree-planting records, use planting-records-check, which includes this check. Reads the files only and never changes them.
+description: "Check whether a project's data can be trusted, for any kind of project (tree planting, cookstoves, water points, trainings): how its places, people, activities and follow-ups connect, four tests (exhaustive, complete, correct, current) and its maps. Writes an HTML report with example rows from their own files, a gap list and what to fix first. Use when someone shares project records (activity logs, beneficiary lists, field-app exports, maps, follow-up surveys) and asks to check, audit or review their data quality. For tree-planting records, use planting-records-check, which includes this check. Reads the files only and never changes them."
 license: MIT
 metadata:
   author: Restoration Scope (restorationscope.com)

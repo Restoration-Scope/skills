@@ -1,6 +1,6 @@
 ---
 name: planting-records-check
-description: Check whether a restoration team's planting records, from one planting log to a whole project folder, can say who planted what, exactly where and when, then run the full data quality check on them: how sites, people, plantings and monitoring connect, four tests (exhaustive, complete, correct, current) and the maps. Writes an HTML report with example rows from their own files, a gap list and what to fix first. Use when someone shares planting logs, farmer lists, maps or monitoring surveys and asks to check, audit or review their planting or reforestation data. Reads the files only and never changes them.
+description: "Check whether a restoration team's planting records, from one planting log to a whole project folder, can say who planted what, exactly where and when, then run the full data quality check on them: how sites, people, plantings and monitoring connect, four tests (exhaustive, complete, correct, current) and the maps. Writes an HTML report with example rows from their own files, a gap list and what to fix first. Use when someone shares planting logs, farmer lists, maps or monitoring surveys and asks to check, audit or review their planting or reforestation data. Reads the files only and never changes them."
 license: MIT
 metadata:
   author: Restoration Scope (restorationscope.com)
